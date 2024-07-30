@@ -1,141 +1,281 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
-}
-
-body {
-  background-image: url('/assets/media/fondo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right center;
-  display: flex;
-  justify-content: flex-start; 
-  align-items: flex-start; 
-  min-height: 100vh;
-  overflow: hidden;
-  padding: 80px;
-}
-
-.login {
-    width: 90%;
-    max-width: 300px;
-    background: rgba(255, 255, 255, 0.7); /* Ajusta la opacidad a 0.7 para mayor transparencia */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-
-.login h2 {
-  font-size: 2rem;
-  color: #047667;
-}
-
-.login form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-
-.login .caixa__input {
-  position: relative;
-  width: 100%;
-}
-
-.login .caixa__input input {
-  width: 100%;
-  padding: 12px 20px;
-  background: transparent;
-  border: 2px solid #047667;
-  border-radius: 40px;
-  font-size: 1.2em;
-  color: #047667;
-  font-weight: bold;
-  box-shadow: none;
-  outline: none;
-}
-
-.login .caixa__input input::placeholder {
-    color: #047667;
-    font-weight: bold;
-  }
-  
-
-.caixa__input input[type="submit"] {
-  padding: 17px 40px;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0;
-  background: linear-gradient(45deg, #ffffff, #385a64);
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
-}
-
-.caixa__input input[type="submit"]:hover {
-  letter-spacing: 3px;
-  background-color: #fff172;
-  color: hsl(164, 79%, 20%);
-  box-shadow: #fff172 1px 3px 19px -2px;
-}
-
-.caixa__input input[type="submit"]:active {
-  letter-spacing: 3px;
-  background-color: #fff172;
-  color: hsl(0, 0%, 100%);
-  box-shadow: #fff172 1px 3px 19px -2px;
-  transform: translateY(10px);
-  transition: 100ms;
-}
-
-
-.btn-logout {
-  position: absolute;
-  bottom: 20px; 
-  right: 20px; 
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-.btn-logout img {
-  width: 75px; 
-  height: auto;
-}
-
-.form-crear-usuario {
-  position: absolute;
-  bottom: 100px; 
-  right: 20px;
-}
-
-.boton-imagen {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-.boton-imagen img {
-  width: 75px; 
-  height: auto; 
-}
-
-
-.logo {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  margin: 10px; 
-  width: 250px; 
-  height: auto; 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+
+
+body {
+
+  background-image: url('/assets/media/fondo.png');
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  background-position: right center;
+
+  display: flex;
+
+  justify-content: flex-start; 
+
+  align-items: flex-start; 
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  padding: 80px;
+
+}
+
+
+
+.login {
+
+    width: 90%;
+
+    max-width: 300px;
+
+    background: rgba(255, 255, 255, 0.7); /* Ajusta la opacidad a 0.7 para mayor transparencia */
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+
+  }
+
+  
+
+
+
+.login h2 {
+
+  font-size: 2rem;
+
+  color: #047667;
+
+}
+
+
+
+.login form {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  align-items: center;
+
+}
+
+
+
+.login .caixa__input {
+
+  position: relative;
+
+  width: 100%;
+
+}
+
+
+
+.login .caixa__input input {
+
+  width: 100%;
+
+  padding: 12px 20px;
+
+  background: transparent;
+
+  border: 2px solid #047667;
+
+  border-radius: 40px;
+
+  font-size: 1.2em;
+
+  color: #047667;
+
+  font-weight: bold;
+
+  box-shadow: none;
+
+  outline: none;
+
+}
+
+
+
+.login .caixa__input input::placeholder {
+
+    color: #047667;
+
+    font-weight: bold;
+
+  }
+
+  
+
+
+
+.caixa__input input[type="submit"] {
+
+  padding: 17px 40px;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  border: 0;
+
+  background: linear-gradient(45deg, #ffffff, #385a64);
+
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  font-size: 15px;
+
+  transition: all 0.5s ease;
+
+}
+
+
+
+.caixa__input input[type="submit"]:hover {
+
+  letter-spacing: 3px;
+
+  background-color: #fff172;
+
+  color: hsl(164, 79%, 20%);
+
+  box-shadow: #fff172 1px 3px 19px -2px;
+
+}
+
+
+
+.caixa__input input[type="submit"]:active {
+
+  letter-spacing: 3px;
+
+  background-color: #fff172;
+
+  color: hsl(0, 0%, 100%);
+
+  box-shadow: #fff172 1px 3px 19px -2px;
+
+  transform: translateY(10px);
+
+  transition: 100ms;
+
+}
+
+
+
+
+
+.btn-logout {
+
+  position: absolute;
+
+  bottom: 20px; 
+
+  right: 20px; 
+
+  background: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
+}
+
+.btn-logout img {
+
+  width: 75px; 
+
+  height: auto;
+
+}
+
+
+
+.form-crear-usuario {
+
+  position: absolute;
+
+  bottom: 100px; 
+
+  right: 20px;
+
+}
+
+
+
+.boton-imagen {
+
+  border: none;
+
+  background: none;
+
+  cursor: pointer;
+
+}
+
+.boton-imagen img {
+
+  width: 75px; 
+
+  height: auto; 
+
+}
+
+
+
+
+
+.logo {
+
+  position: absolute;
+
+  top: 20px;
+
+  right: 30px;
+
+  margin: 10px; 
+
+  width: 250px; 
+
+  height: auto; 
+
 }
