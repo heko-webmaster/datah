@@ -1,0 +1,6 @@
+[22-Jul-2024 17:01:49 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'alvarium_V3ryF1_2024'@'localhost' to database 'flotas' in /home/alvarium/public_html/powerbi/config.php on line 7
+[23-Jul-2024 03:07:15 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'alvarium_V3ryF1_2024'@'localhost' to database 'flotas' in /home/alvarium/public_html/powerbi/config.php on line 7
+[23-Jul-2024 04:00:52 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'alvarium_V3ryF1_2024'@'localhost' to database 'flotas' in /home/alvarium/public_html/powerbi/config.php on line 7
+[23-Jul-2024 04:01:53 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'alvarium_V3ryF1_2024'@'localhost' to database 'flotas' in /home/alvarium/public_html/powerbi/config.php on line 7
+[24-Jul-2024 03:55:43 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alvarium_V3ryF1_2024'@'localhost' (using password: YES) in /home/datahtec/exer.datah.tech/config.php on line 7
+[24-Jul-2024 03:56:53 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alvarium_V3ryF1_2024'@'localhost' (using password: YES) in /home/datahtec/exer.datah.tech/config.php on line 7

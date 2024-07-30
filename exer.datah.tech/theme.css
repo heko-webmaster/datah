@@ -1,0 +1,572 @@
+html, body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	overflow-x: hidden;
+}
+h1 {
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 1;
+}
+h2 {
+	font-size: 2.25rem;
+	line-height: 1;
+}
+h3 {
+	font-size: 2rem;
+	line-height: 1;
+}
+h4 {
+	font-size: 1.75rem;
+	line-height: 1;
+}
+h5 {
+	font-size: 1.5rem;
+	line-height: 1;
+}
+h1, h2, h3, h4, h5 {
+	color: #062A3A;
+}
+p {
+	font-size: 1rem;
+	line-height: 1;
+	margin: 0
+}
+
+#home {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+	background: url(assets/media/fondo.png) no-repeat right center;
+	background-size: cover;
+	margin: 0;
+}
+#home-options {
+	position: absolute;
+	width: 20vh;
+	width: calc(var(--vh, 1vh) * 20);;
+	left: 10vw;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+#home-options a {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none !important;
+	margin: 0 0 1vw;
+}
+#home-options a img {
+	height: 20vh;
+	height: calc(var(--vh, 1vh) * 20);
+}
+#home-options a p {
+	color: #FFF;
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	margin: 0.5vw 0 0;
+}
+
+#home iframe {
+	display: block;
+	width: 90%;
+	max-width: 1200px;
+	border: none;
+	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+	margin: 2.5vw auto 0;
+}
+
+#brand-logo {
+	position: fixed;
+	width: 10vw;
+	top: 1vw;
+	right: 2vw;
+	z-index: 1030;
+}
+#brand-logo img {
+	width: 100%;
+}
+
+#balanced-scorecard {
+	background: url(assets/media/fondo-balanced-scorecard.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+#balanced-scorecard h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0.5rem 0;
+}
+#balanced-scorecard .container {
+	position: relative;
+	max-width: initial;
+	min-height: 90vh;
+	min-height: calc(var(--vh, 1vh) * 90);
+	padding: 0;
+}
+
+#main-data {
+	display: inline-block;
+	position: absolute;
+	width: 20vw;
+	height: 20vw;
+	left: 50%;
+	top: 45%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	z-index: 2;
+}
+#main-data img {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	-webkit-transition: 1s;
+  			-o-transition: 1s;
+  			transition: 1s;
+	-webkit-transition-timing-function: ease-out;
+          	-o-transition-timing-function: ease-out;
+	   transition-timing-function: ease-out;
+}
+#circle1 {
+	-webkit-transform: rotate(200deg);
+	    -ms-transform: rotate(200deg);
+	        transform: rotate(200deg);
+}
+#circle2 {
+	-webkit-transform: rotate(133deg);
+	    -ms-transform: rotate(133deg);
+	        transform: rotate(133deg);
+}
+#circle3 {
+	background-color: #FFF;
+	border-radius: 50%;
+	-webkit-transform: rotate(67deg);
+	    -ms-transform: rotate(67deg);
+	        transform: rotate(67deg);
+}
+#main-data p {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 50%;
+	font-size: 3rem;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+#balanced-scorecard .data-card {
+	position: absolute;
+	width: 12.5vw;
+	background-color: #FFF;
+	padding: 0 1rem 0.5rem;
+	border-radius: 0.5rem;
+	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15)
+}
+#balanced-scorecard .data-card:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 110%;
+	height: 110%;
+	left: 50%;
+	top: 50%;
+	border: 0.25vw solid #0A5593;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0 0 5px 0 rgba(41, 195, 211, 1);
+	        box-shadow: 0 0 5px 0 rgba(41, 195, 211, 1);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+#balanced-scorecard .data-card:hover:before,
+#balanced-scorecard .data-card:focus:before {
+	-webkit-box-shadow: 0 0 5px 5px rgba(41, 195, 211, 1);
+	        box-shadow: 0 0 5px 5px rgba(41, 195, 211, 1);
+}
+#balanced-scorecard #ingresos.data-card {
+	left: 25vw;
+	top: 5vh
+}
+#balanced-scorecard #combustible.data-card {
+	left: 60vw;
+	top: 5vh
+}
+#balanced-scorecard #mantenimiento.data-card {
+	right: 5vw;
+  	top: 20vh
+}
+#balanced-scorecard #servicio.data-card {
+	right: 7.5vw;
+  	bottom: 10vh
+}
+#balanced-scorecard #siniestralidad.data-card {
+	left: 57.5vw;
+	bottom: 2.5vh
+}
+#balanced-scorecard #humano.data-card {
+	left: 32.5vw;
+	bottom: 2.5vh
+}
+#balanced-scorecard #cobranza.data-card {
+	left: 7.5vw;
+	bottom: 10vh
+}
+#balanced-scorecard #utilidad.data-card {
+	left: 5vw;
+	top: 20vh
+}
+#balanced-scorecard .meter {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+#balanced-scorecard .meter svg {
+	width: 100%;
+	max-width: 100%;
+	height: 11.5vw;
+  	margin: auto
+}
+#balanced-scorecard .needle {
+  position: absolute;
+  width: 1.25vw !important;
+  left: 44%;
+  top: 0;
+  -webkit-transform-origin: center calc(100% - 3.5vw);
+      -ms-transform-origin: center calc(100% - 3.5vw);
+          transform-origin: center calc(100% - 3.5vw);
+  -webkit-transform: rotate(-110deg);
+      -ms-transform: rotate(-110deg);
+          transform: rotate(-110deg);
+  -webkit-transition: 5s ease-in-out;
+  -o-transition: 5s ease-in-out;
+  transition: 5s ease-in-out;
+}
+#balanced-scorecard .data-card .value {
+	width: 100%;
+	font-size: 1.25rem;
+	text-align: center;
+	margin: -2em 0 0;
+}
+#balanced-scorecard .data-card .metric {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 90%;
+	text-align: right;
+	padding: 0 1.5rem;
+	-webkit-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	        transform: translateY(-100%);
+}
+#balanced-scorecard .data-card h5 {
+	width: auto;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	font-weight: normal;
+	margin: 0 -1rem;
+	white-space: nowrap;
+}
+#balanced-scorecard .data-card > a {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #FFF;
+	padding: 0.2vw;
+	border-radius: 50%;
+	-webkit-box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
+	        box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translate(-45%, -45%);
+	    -ms-transform: translate(-45%, -45%);
+	        transform: translate(-45%, -45%);
+}
+#balanced-scorecard .data-card > a img {
+	width: 5vw;
+}
+
+.dashboard {
+	width: 100%;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+}
+.dashboard iframe {
+	width: 100%;
+	height: 100%;
+	border: none
+}
+
+#profit-lost {
+	min-height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
+	text-align: center;
+	background: url(assets/media/fondo-dashboard-profit-lost.jpg) no-repeat center 25%;
+	background-size: 100% auto;
+	padding: 1.25vw 0 0;
+}
+#profit-lost h1 {
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 0 4vw;
+}
+#profit-lost .container {
+	position: relative;
+	max-width: initial;
+	min-height: 90vh;
+	min-height: calc(var(--vh, 1vh) * 90);
+	padding: 0 10vw;
+}
+
+#profit-lost .dashboard-card {
+	display: inline-block;
+	position: relative;
+	width: calc(100% / 3);
+	vertical-align: top;
+	padding: 0 1vw 5rem;
+	margin: 0 0 4vw;
+}
+#profit-lost .dashboard-card:hover,
+#profit-lost .dashboard-card:focus {
+	padding: 0 0 3.4rem;
+}
+#profit-lost .dashboard-card h2 {
+	color: #062A3A;
+	font-weight: normal;
+	text-align: center;
+	margin: 0 0 4vw;
+}
+#profit-lost .dashboard-card svg {
+	width: calc(100% - 5vw);
+	margin: 0 2.5vw;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+#profit-lost .dashboard-card:hover svg,
+#profit-lost .dashboard-card:focus svg {
+	-webkit-transform: scale(1.25);
+	    -ms-transform: scale(1.25);
+	        transform: scale(1.25);
+}
+#profit-lost .dashboard-card svg.needle {
+  position: absolute;
+  width: 7% !important;
+  left: 37%;
+  top: 0;
+  -webkit-transform-origin: center 90%;
+      -ms-transform-origin: center 90%;
+          transform-origin: center 90%;
+  -webkit-transform: translateY(100%) rotate(-110deg);
+      -ms-transform: translateY(100%) rotate(-110deg);
+          transform: translateY(100%) rotate(-110deg);
+  -webkit-transition: 5s ease-in-out;
+  -o-transition: 5s ease-in-out;
+  transition: 5s ease-in-out;
+}
+#profit-lost .dashboard-card:hover svg.needle,
+#profit-lost .dashboard-card:focus svg.needle {
+	width: 8.5% !important;
+	top: -2.5vw;
+	-webkit-transform-origin: center 87.5%;
+	    -ms-transform-origin: center 87.5%;
+	        transform-origin: center 87.5%
+}
+#profit-lost .dashboard-card .value {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 2.5rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+}
+#profit-lost .dashboard-card .value sup {
+	font-size: 50%;
+	font-weight: 300;
+	margin-left: 1rem;
+}
+#profit-lost .dashboard-card .percentage {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+#profit-lost .base {
+	display: inline-block;
+	position: relative;
+	width: 15%;
+	vertical-align: top;
+	padding: 0 0.5vw;
+}
+#profit-lost .base > img {
+	width: 100%;
+	padding: 7.25% 0 0;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+#profit-lost .base:hover > img,
+#profit-lost .base:focus > img {
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+#profit-lost .base div {
+	position: absolute;
+	width: calc(100% - 5vw);
+	left: 2.5vw;
+	top: 0;
+	text-align: center;
+	padding: 3vw 0 0;
+}
+#profit-lost .base div img {
+	display: none;
+	height: 2.25rem;
+}
+#profit-lost .base div .value {
+	color: #C10230;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.25;
+	margin: 0.5rem 0 0;
+}
+#profit-lost .base div .value sup {
+	font-size: 50%;
+	font-weight: 300;
+	margin-left: 1rem;
+}
+#profit-lost .base div .percentage {
+	color: #C10230;
+	font-size: 2rem;
+	line-height: 1.25;
+}
+#profit-lost .base > p {
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-align: center;
+	margin: 0.5rem 0 0;
+}
+
+#control-tower {
+	min-height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
+	background: url(assets/media/Fondo-Control-Tower-D.jpg) no-repeat center center;
+	background-size: 100% auto;
+	padding: 1.25vw 0 0;
+}
+#control-tower h1 {
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 0 1.25vw;
+}
+#control-tower .container {
+	position: relative;
+	max-width: initial;
+	min-height: 90vh;
+	min-height: calc(var(--vh, 1vh) * 90);
+	padding: 0 2.5vw;
+}
+
+#control-tower .info-card {
+	display: inline-block;
+	position: relative;
+	width: 20%;
+	vertical-align: top;
+}
+#control-tower .info-card:nth-of-type(1),
+#control-tower .info-card:nth-of-type(5) {
+	margin: 3.5vw 0 0;
+}
+#control-tower .info-card:nth-of-type(n+5) {
+	vertical-align: bottom;
+}
+#control-tower .info-card:nth-of-type(6),
+#control-tower .info-card:nth-of-type(10) {
+	margin: 2vw 0 3.5vw;
+}
+#control-tower .info-card img {
+	width: 100%;
+}
+#control-tower .info-card div {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 55%;
+	text-align: center;
+	padding: 0 2.5vw 0 2vw;
+	transform: translateY(-50%);
+}
+#control-tower .info-card div h5 {
+	font-weight: bold;
+}
+#control-tower .info-card div p {
+	font-weight: 300;
+}
+
+@media (max-width: 767px) {
+	#brand-logo {
+		width: 20vw;
+	}
+
+	#balanced-scorecard h1 {
+		margin: 10vw 0 5vw;
+	}
+
+	#main-data,
+	#balanced-scorecard .data-card {
+		display: block !important;
+		position: relative !important;
+		width: 50vw !important;
+		left: initial !important;
+		top: initial !important;
+		right: initial !important;
+		bottom: initial !important;
+		margin: 0 auto 10vw !important;
+		-webkit-transform: initial !important;
+		    -ms-transform: initial !important;
+		        transform: initial !important;
+	}
+	#main-data {
+		width: 75vw !important;
+		height: 75vw !important;
+		margin: 0 auto 5vw !important;
+	}
+	#balanced-scorecard .meter svg {
+		height: 42.5vw;
+	}
+	#balanced-scorecard .needle {
+		width: 5vw !important;
+		-webkit-transform-origin: center calc(100% - 11vw);
+		    -ms-transform-origin: center calc(100% - 11vw);
+		        transform-origin: center calc(100% - 11vw);
+	}
+	#balanced-scorecard .data-card .value {
+		font-size: 1.125rem;
+	}
+	#balanced-scorecard .data-card .metric {
+		font-size: 0.9rem;
+	}
+	#balanced-scorecard .data-card > a img {
+		width: 12.5vw;
+	}
+}
+
