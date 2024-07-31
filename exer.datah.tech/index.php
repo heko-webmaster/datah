@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="submit" value="Iniciar Sesion">
             </div>
             <?php if (isset($_GET['error']) && $_GET['error'] == 'true'): ?>
-                <p style="color: red;">Usuario o contraseña incorrectos.</p>
+                <p style="color: red;">Usuario o contrase?a incorrectos.</p>
             <?php endif; ?>
         </form>
     </div>
