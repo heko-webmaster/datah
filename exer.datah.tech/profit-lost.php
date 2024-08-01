@@ -1,12 +1,12 @@
 <?php
-    session_start();
+session_start();
 
-    $allowed_roles = ['Admin', 'Supervisor', 'CFV'];
+$allowed_roles = ['Admin', 'Supervisor', 'CFV'];
 
-    if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== true || !in_array($_SESSION['rol'], $allowed_roles)) {
-        header("Location: index.php");
-        exit;
-    }
+if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== true || !in_array($_SESSION['rol'], $allowed_roles)) {
+    header("Location: index.php");
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Zopy">
+        <meta name="author" content="Datah">
 
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

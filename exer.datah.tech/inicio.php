@@ -1,11 +1,12 @@
 <?php
-    session_start();
-    $allowed_roles = ['Admin', 'Supervisor', 'CFV'];
+session_start();
 
-    if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== true || !in_array($_SESSION['rol'], $allowed_roles)) {
-        header("Location: index.php");
-        exit;
-    }
+$allowed_roles = ['Admin', 'Supervisor', 'CFV'];
+
+if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== true || !in_array($_SESSION['rol'], $allowed_roles)) {
+    header("Location: index.php");
+    exit;
+}
 ?>
 
 <!DOCTYPE html>

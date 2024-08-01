@@ -98,9 +98,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="caixa__input">
 
-                <label for="correo">Correo Electr贸nico:</label>
+                <label for="correo">Correo Electrónico:</label>
 
-                <input type="email" id="correo" name="correo" placeholder="Correo Electr贸nico" required>
+                <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
 
             </div>
 
@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <button class="back-button" onclick="window.history.back()">
 
-        <img src="./img/left-arrow.png" alt="Volver atr谩s">
+        <img src="./img/left-arrow.png" alt="Volver atrás">
 
     </button>
 
