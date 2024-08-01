@@ -54,7 +54,7 @@
 
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -86,7 +86,7 @@
                     <input type="submit" value="Iniciar Sesion">
                 </div>
                 <?php if (isset($_GET['error']) && $_GET['error'] == 'true'): ?>
-                    <p style="color: red;">Usuario o contraseña incorrectos.</p>
+                    <p style="color: red;">Usuario o contraseña incorrectos</p>
                 <?php endif; ?>
             </form>
         </div>
