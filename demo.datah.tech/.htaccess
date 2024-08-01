@@ -1,0 +1,54 @@
+# Redirigir todo el tráfico a HTTPS (si está habilitado en tu servidor)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Desactivar el listado de directorios
+Options -Indexes
+
+# Redirigir el acceso a config.php
+RewriteCond %{REQUEST_URI} ^/config\.php$ [NC]
+RewriteCond %{HTTP_COOKIE} !PHPSESSID= [NC]
+RewriteRule ^ /index.php [L,QSA]
+
+RewriteCond %{REQUEST_URI} ^/config\.php$ [NC]
+RewriteCond %{HTTP_COOKIE} PHPSESSID= [NC]
+RewriteRule ^ /inicio.php [L,QSA]
+
+# Redirigir el acceso a crear_usuario.php
+RewriteCond %{REQUEST_URI} ^/crear_usuario\.php$ [NC]
+RewriteCond %{HTTP_COOKIE} !PHPSESSID= [NC]
+RewriteRule ^ /index.php [L,QSA]
+
+RewriteCond %{REQUEST_URI} ^/crear_usuario\.php$ [NC]
+RewriteCond %{HTTP_COOKIE} PHPSESSID=([0-9a-fA-F]+) [NC]
+RewriteCond %{REQUEST_URI} !/crear_usuario\.php$ [NC]
+RewriteRule ^ /inicio.php [L,QSA]
+
+# Redirigir al login si el usuario no tiene acceso a las views
+RewriteCond %{REQUEST_URI} ^/(balanced-scorecard|control-tower|header|logout|profit-lost)\.php$ [NC]
+RewriteCond %{HTTP_COOKIE} !PHPSESSID= [NC]
+RewriteRule ^ /index.php [L,QSA]
+
+# Permitir acceso a archivos necesarios
+<FilesMatch "^index\.php$">
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^inicio\.php$">
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(balanced-scorecard|control-tower|header|logout|profit-lost)\.php$">
+    Allow from all
+</FilesMatch>
+
+# Configuración adicional de seguridad (si mod_headers está habilitado)
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Proteger contra ataques de clickjacking
+Header always append X-Frame-Options SAMEORIGIN

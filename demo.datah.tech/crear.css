@@ -1,0 +1,116 @@
+/* styles.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-image: url('/assets/media/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.7); /* Ajusta la opacidad a 0.7 para mayor transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-container h1 {
+  font-size: 2em;
+  color: #047667; /* Color verde */
+}
+
+.form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.form-container .caixa__input {
+  position: relative;
+  width: 100%;
+}
+
+.form-container .caixa__input input,
+.form-container select {
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #047667; /* Color verde */
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #047667; /* Color verde */
+  font-weight: bold;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-container .caixa__input input::placeholder {
+  color: #047667; /* Color verde */
+  font-weight: bold;
+}
+
+.form-container .caixa__input input[type="submit"] {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background: linear-gradient(45deg, #ffffff, #385a64);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.form-container .caixa__input input[type="submit"]:hover {
+  letter-spacing: 3px;
+  background-color: #fff172;
+  color: hsl(164, 79%, 20%);
+  box-shadow: #fff172 1px 3px 19px -2px;
+}
+
+.form-container .caixa__input input[type="submit"]:active {
+  letter-spacing: 3px;
+  background-color: #fff172;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #fff172 1px 3px 19px -2px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .back-button img {
+    width: 75px;
+    height: auto;
+  }

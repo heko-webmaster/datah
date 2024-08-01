@@ -32,7 +32,7 @@
                     <img id="circle3" src="assets/media/Circulo-3.png">
                     <img id="circle2" src="assets/media/Circulo-2.png">
                     <img id="circle1" src="assets/media/Circulo-1.png">
-                    <p>0</p>
+                    <p>79.0</p>
                 </div>
                 <div id="ingresos" class="data-card">
                     <div class="meter">
