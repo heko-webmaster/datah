@@ -586,8 +586,6 @@ p {
 #control-tower .container {
 	position: relative;
 	max-width: initial;
-	min-height: 90vh;
-	min-height: calc(var(--vh, 1vh) * 90);
 	padding: 0 2.5vw;
 }
 #control-tower .container > img {
