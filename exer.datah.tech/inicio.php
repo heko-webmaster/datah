@@ -16,7 +16,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="theme.css" rel="stylesheet">
-        <link rel="stylesheet" href="./estilos.css">
+        <!-- <link rel="stylesheet" href="./estilos.css"> -->
         <title>Tablero Full Tech Logistic</title>
     </head>
     <body id="home">
@@ -33,19 +33,29 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
             <?php endif; ?>
         </div>
 
-        <form id="logout-form" action="logout.php" method="POST">
-            <button type="submit" class="btn-logout">
-                <img src="assets/media/logout.png" alt="Cerrar sesión">
-            </button>
-        </form>
-
-        <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] === 'Admin'): ?>
-            <form action="crear_usuario.php" method="get" class="form-crear-usuario">
-                <button class="boton-imagen" type="submit">
-                    <img src="assets/media/user.png" alt="Crear Usuario">
+        <div id="additional-options">
+            <form id="logout-form" action="logout.php" method="POST">
+                <button type="submit" class="btn-logout">
+                    <img src="assets/media/icono-cerrar-sesion.png" alt="Cerrar sesión">
                 </button>
             </form>
-        <?php endif; ?>
+
+            <div id="tutorial-option">
+                <button type="submit" class="btn-tutorial">
+                    <img src="assets/media/icono-signo-interrogacion.png" alt="Tutorial">
+                </button>
+            </div>
+
+            <!--<?php if (isset($_SESSION['rol']) && $_SESSION['rol'] === 'Admin'): ?>
+                <form action="crear_usuario.php" method="get" class="form-crear-usuario">
+                    <button class="boton-imagen" type="submit">
+                        <img src="assets/media/user.png" alt="Crear Usuario">
+                    </button>
+                </form>
+            <?php endif; ?>-->
+
+            <img class="transportadora-texto" src="assets/media/transportadora-texto.png" alt="Transportadora">
+        </div>
     </body>
     <script src="theme.js" type="text/javascript"></script>
 </html>

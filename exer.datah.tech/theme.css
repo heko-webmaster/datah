@@ -128,8 +128,6 @@ p {
 }
 #home-options {
 	position: absolute;
-	width: 20vh;
-	width: calc(var(--vh, 1vh) * 20);;
 	left: 10vw;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -137,7 +135,7 @@ p {
 	        transform: translateY(-50%);
 }
 #home-options a {
-	display: inline-block;
+	display: block;
 	text-align: center;
 	text-decoration: none !important;
 	margin: 0 0 1vw;
@@ -149,10 +147,37 @@ p {
 #home-options a p {
 	color: #FFF;
 	font-size: 1.25rem;
-	font-weight: bold;
+	font-weight: 500;
 	text-transform: uppercase;
 	text-decoration: none !important;
+	letter-spacing: 0.1em;
 	margin: 0.5vw 0 0;
+	white-space: nowrap;
+}
+
+#additional-options {
+	position: absolute;
+	right: 2.5vw;
+	bottom: 2.5vw;
+	text-align: right;
+}
+#logout-form,
+#tutorial-option {
+	display: inline-block;
+}
+#additional-options button {
+	background-color: transparent;
+	padding: 0 0 0 1rem;
+	border: none;
+	cursor: pointer;
+}
+#additional-options button img {
+	height: 50px;
+}
+.transportadora-texto {
+	display: block;
+	height: 50px;
+	padding: 10px 0;
 }
 
 #home iframe {
