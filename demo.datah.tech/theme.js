@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
     responsiveFontSize = fontSize*ratio
     jQuery("html").css('font-size', responsiveFontSize)
     
-    if (jQuery("#balanced-scorecard").length > 0) {
+    if (false) {//if (jQuery("#balanced-scorecard").length > 0) {
         let readyInterval = setInterval(function(e) {
             function getSpeedometerValue(val, min, max) {
                 const meterMin = -110;
@@ -118,7 +118,7 @@ jQuery(document).ready(function() {
         }, 500)
     }
 
-    if (jQuery("#profit-lost").length > 0) {
+    if (false) {//(jQuery("#profit-lost").length > 0) {
         var readyInterval = setInterval(function(e) {
             function getSpeedometerValue(val, min, max) {
                 const meterMin = -110;
