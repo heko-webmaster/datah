@@ -53,8 +53,6 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
                     </button>
                 </form>
             <?php endif; ?>-->
-
-            <img class="transportadora-texto" src="assets/media/transportadora-texto.png" alt="Transportadora">
         </div>
     </body>
     <script src="theme.js" type="text/javascript"></script>
