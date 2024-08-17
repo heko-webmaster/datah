@@ -32,7 +32,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
             <div class="container">
                 <img src="assets/media/lineas-control-tower.png">
-                <div class="info-card">
+                <a class="info-card">
 
                     <img src="assets/media/T-Bitacora-vigilancia.png">
 
@@ -44,7 +44,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card">
 
                     <img src="assets/media/T-control-contenedores.png">
 
@@ -56,7 +56,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card">
 
                     <img src="assets/media/T-lista-asistencia.png">
 
@@ -68,7 +68,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card">
 
                     <img src="assets/media/T-unidades-patio.png">
 
@@ -80,7 +80,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card" href="https://app.powerbi.com/reportEmbed?reportId=27a882d5-a935-4dec-af7a-3c697a9a787f&autoAuth=true&ctid=89c4c84d-eebb-419c-9a49-afac68cebb7e">
 
                     <img src="assets/media/T-1-18-AsignacionFlota.png">
 
@@ -92,7 +92,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card">
 
                     <img src="assets/media/T-pase-salida.png">
 
@@ -104,7 +104,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card" href="https://app.powerbi.com/reportEmbed?reportId=9f84f1dc-cbe6-428a-b63f-b22bd09fbf17&autoAuth=true&ctid=89c4c84d-eebb-419c-9a49-afac68cebb7e">
 
                     <img src="assets/media/T-inventario-remolques.png">
 
@@ -116,7 +116,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card">
 
                     <img src="assets/media/T-control-fisicoV.png">
 
@@ -128,7 +128,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card">
 
                     <img src="assets/media/T-Seguimiento-viaje.png">
 
@@ -140,7 +140,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div><div class="info-card">
+                </a><a class="info-card">
 
                     <img src="assets/media/T-1-18-AsignacionFlota.png">
 
@@ -152,7 +152,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
 
                     </div>
 
-                </div>
+                </a>
 
             </div>
 

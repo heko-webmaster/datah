@@ -78,7 +78,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
                         <span class="metric"></span>
                         <h5>Combustible</h5>
                     </div>
-                    <a href=""><img src="assets/media/iconos-combustible.png"></a>
+                    <a href="https://app.powerbi.com/reportEmbed?reportId=124604d5-9614-4e6e-abd2-89a53e33ed3f&autoAuth=true&ctid=89c4c84d-eebb-419c-9a49-afac68cebb7e"><img src="assets/media/iconos-combustible.png"></a>
                 </div>
                 <div id="mantenimiento" class="data-card">
                     <div class="meter">
@@ -129,7 +129,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
                         <span class="metric"></span>
                         <h5>Siniestralidad</h5>
                     </div>
-                    <a href=""><img src="assets/media/iconos-siniestralidad.png"></a>
+                    <a href="https://app.powerbi.com/reportEmbed?reportId=28d241d5-f545-485c-98d6-cdca687ed666&autoAuth=true&ctid=89c4c84d-eebb-419c-9a49-afac68cebb7e"><img src="assets/media/iconos-siniestralidad.png"></a>
                 </div>
                 <div id="humano" class="data-card">
                     <div class="meter">
@@ -146,7 +146,7 @@ if (!isset($_SESSION['acceso_permitido']) || $_SESSION['acceso_permitido'] !== t
                         <span class="metric"></span>
                         <h5>Capital Humano</h5>
                     </div>
-                    <a href=""><img src="assets/media/iconos-capital-humano.png"></a>
+                    <a href="https://app.powerbi.com/reportEmbed?reportId=fd95c7c5-aabf-4de5-9e79-82116461ffbe&autoAuth=true&ctid=89c4c84d-eebb-419c-9a49-afac68cebb7e"><img src="assets/media/iconos-capital-humano.png"></a>
                 </div>
                 <div id="cobranza" class="data-card">
                     <div class="meter">
